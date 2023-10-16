@@ -164,7 +164,7 @@ Also, move the line to unload AMD kernal module below detaching devices from hos
 
   ```sh
   mkdir /etc/libvirt/hooks
-  touch /etc/libvirt/hooks/qemu
+  cd /etc/libvirt/hooks/ && wget https://github.com/maulvi/Complete-Single-GPU-Passthrough/raw/master/qemu
   chmod +x /etc/libvirt/hooks/qemu
   ```
   <table>
@@ -209,7 +209,7 @@ fi
   
   ```sh
   mkdir -p /etc/libvirt/hooks/qemu.d/win10/prepare/begin
-  touch /etc/libvirt/hooks/qemu.d/win10/prepare/begin/start.sh
+  cd /etc/libvirt/hooks/qemu.d/win10/prepare/begin && wget https://github.com/maulvi/Complete-Single-GPU-Passthrough/raw/master/start.sh
   chmod +x /etc/libvirt/hooks/qemu.d/win10/prepare/begin/start.sh
   ```
 **Note**: If you're on KDE Plasma (Wayland), you need to terminate user services alongside display-manager (https://github.com/QaidVoid/Complete-Single-GPU-Passthrough/issues/31).
@@ -264,7 +264,7 @@ modprobe vfio-pci
 
   ```sh
   mkdir -p /etc/libvirt/hooks/qemu.d/win10/release/end
-  touch /etc/libvirt/hooks/qemu.d/win10/release/end/stop.sh
+  cd /etc/libvirt/hooks/qemu.d/win10/release/end/ && wget https://github.com/maulvi/Complete-Single-GPU-Passthrough/raw/master/stop.sh
   chmod +x /etc/libvirt/hooks/qemu.d/win10/release/end/stop.sh
   ```
   <table>
