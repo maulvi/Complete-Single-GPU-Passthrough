@@ -76,7 +76,13 @@ You can avoid having to pass everything by using [ACS override patch](https://wi
   emerge -av qemu virt-manager libvirt ebtables dnsmasq
   ```
 </details>
+<details>
+  <summary><b>Artix Linux</b></summary>
 
+  ```sh
+  pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq ebtables libvirt-openrc
+  ```
+</details>
 <details>
   <summary><b>Arch Linux</b></summary>
 
